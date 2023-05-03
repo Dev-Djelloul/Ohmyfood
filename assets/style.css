@@ -1,10 +1,5 @@
 /* Propriétés de la mise en page Mobile First*/
 
-* {
-  img {
-    object-;
-  }
-}
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .body {
     margin: 30px;
@@ -67,7 +62,6 @@
     font-size: 24px;
     line-height: 28px;
     color: #000000;
-
     text-align: center;
     margin-top: 100px;
   }
@@ -109,23 +103,23 @@
     margin-top: 50px;
   }
 
-  /* Encadré de fonctionnement du restaurant */
+  /* Encadrés de fonctionnement du restaurant */
 
   .fonctionnement {
     width: 375px;
     height: 360px;
     background-color: #ffffff;
-    margin: 100px 0px 0px;
+    margin-bottom: 200px;
   }
 
-  h3 {
+  .titre-troisieme {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     color: #000000;
-    margin: 20px 20px;
+    margin: 200px 20px;
   }
 
   .encadre-fonctionnement {
@@ -137,7 +131,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 10px 0px 10px;
+    margin: 30px;
   }
 
   .choix {
@@ -171,7 +165,7 @@
 
   /* Les cartes restaurants */
 
-  .cartes-restaurants h3 {
+  .cartes-restaurants {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
@@ -309,7 +303,11 @@ button:active {
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
 }
 
-/* Responsive Desktop */
+/* Propriété de la page responsive Desktop */
+
+* {
+  
+}
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .body {
@@ -344,14 +342,276 @@ button:active {
     margin-right: 20px;
   }
 
-  .titre-premier h1{
+  .titre-premier {
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    text-align: center;
     display: flex;
     justify-content: center;
     margin-top: 100px;
   }
 
   .titre-second {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    text-align: center;
     display: flex;
     justify-content: center;
   }
+
+  .bouton-exploration {
+    height: 50px;
+    width: 218px;
+    background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    justify-content: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+
+  .bouton-position {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  /* Fonctionnement */
+
+  .fonctionnement {
+    height: 230px;
+    margin-top: 50px;
+    padding-top: 20px;
+    background: #FFFFFF;
+  }
+
+  .titre-troisieme {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin: 0px 0px;
+  
+  }
+
+  .flexi-fonctionnement {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .encadre-fonctionnement {
+    width: 345px;
+    height: 72px;
+    background-color: #f7f7f7;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px 0px 10px;
+  }
+
+  .choix {
+    width: 211px;
+    height: 15.67px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+
+  .icon {
+    color: grey;
+    margin-right: 20px;
+  }
+
+  .circle {
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: #9356dc;
+    margin-right: 280px;
+  }
+
+
+/* Cartes des restaurants */
+
+.cartes-restaurants {
+  padding-top: 30px;
+}
+
+.titre-quatrieme {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.cartes-menus {
+  position: relative;
+  width: 100%;
+  height: 310px;
+  background: #ffffff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin: 40px 40px 40px 40px;
+}
+
+.image-restaurant {
+  width: 100%;
+  height: 230px;
+  position: relative;
+  object-fit: fill;
+}
+
+ .image-restaurant img {
+  width: 100%;
+  height: 230px;
+  border-radius: 15px 15px 0px 0px;
+  background-size: contain;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 70px;
+  height: 19px;
+  padding: 5px;
+  background: #99e2d0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #008766;
+}
+
+.restaurant-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.restaurant-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  margin-left: 20px;
+  margin-top: 20px;
+  color: #000000;
+}
+
+.like {
+  padding: 30px 30px 0px 10px;
+}
+
+button {
+  border: none;
+}
+
+.flexi-cartes-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  }
+
+.flexi-cartes-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* Footer */
+
+footer {
+  width: 100%;
+  height: 150px;
+  margin-top: 10px;
+  background-color: #353535;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.footer-logo {
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 20px;
+}
+
+.footer-logo img {
+  height: 27px;
+  width: 137px;
+  filter: invert(100%);
+  padding: 20px;
+}
+
+.footer-texte {
+  text-decoration: none;
+  width: 168px;
+  height: 19px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px 0px 0px 20px;
+  margin-top: 0px;
+}
+
+.flexi-footer {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.footer-line {
+  width: 250px;
+}
+
+.footer-line-2 {
+  width: 140px;
+}
+
+.icons {
+  margin-right: 20px;
+}
+
+
 }
