@@ -309,9 +309,6 @@ button:active {
 
 /* Propriété de la page responsive Desktop */
 
-* {
-  
-}
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .body {
@@ -393,9 +390,11 @@ button:active {
   /* Fonctionnement */
 
   .fonctionnement {
+    display: flex;
+    flex-direction: column;
     height: 230px;
-    margin-top: 50px;
-    padding-top: 20px;
+    margin: 50px 0px 0px 0px;
+    padding: 20px 0px 20px 20px;
     background: #FFFFFF;
   }
 
@@ -411,7 +410,8 @@ button:active {
   }
 
   .flexi-fonctionnement {
-    
+    display: flex;
+    justify-content: start;
   }
 
   .encadre-fonctionnement {
@@ -423,7 +423,7 @@ button:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 10px 0px 10px;
+    margin: 30px 30px 30px 30px;
   }
 
   .choix {
@@ -459,7 +459,8 @@ button:active {
 /* Cartes des restaurants */
 
 .cartes-restaurants {
-  padding-top: 30px;
+  margin: 0px 0px 50px 0px;
+  padding: 20px 0px 20px 20px;
 }
 
 .titre-quatrieme {
