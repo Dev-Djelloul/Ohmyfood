@@ -249,8 +249,8 @@
   /* Footer */
 
   footer {
-    width: auto;
-    height: 200px;
+    width: 100%;
+    height: 230px;
     margin-top: 10px;
     background-color: #353535;
   }
@@ -287,10 +287,17 @@
     list-style-type: none;
     padding: 0px 0px 0px 20px;
     margin-top: 0px;
+    width: 100%;
   }
 
-  .footer-line {
-    width: 200px;
+  li {
+    width: 100%;
+    margin: 10px;
+  }
+
+
+  .footer-texte {
+    width: 100%;
     display: flex;
   }
 
@@ -582,16 +589,17 @@ button:active {
     font-size: 16px;
     line-height: 19px;
     color: #fff;
-    margin-top: 70px;
+    margin-top: 80px;
   }
 
-  .toto {
+  .liens-footer {
     display: flex;
   }
 
-  .toto li {
-    padding: 20px 20px 20px 20px;
-  }
+  .liens-footer li {
+    padding: 1px 1px 1px 1px;
+    margin: 6px 6px 6px 6px;
+    }
 
   ul {
     list-style-type: none;
