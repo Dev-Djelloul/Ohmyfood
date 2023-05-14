@@ -1,3 +1,5 @@
+/* Propriétés de la page mobile */
+
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .body {
     margin: 30px;
@@ -28,20 +30,24 @@
     height: 275px;
     width: 100%;
     left: 0px;
-    top: 50px;
+    top: 0px;
   }
 
-  .page {
+  /* Page de restaurant */
+
+  .page-de-restaurant {
     position: absolute;
     z-index: 1;
-    border-radius: 35px;
+    border-radius: 50px 50px 0px 0px;
     background-color: #f7f7f7;
     width: 100%;
-    height: 1307px;
+    height: 60px;
+    top: 290px;
+    margin-left: -5px;
   }
 
   .titre {
-    width: 341px;
+    width: 100%;
     height: 27px;
     font-family: "Shrikhand";
     font-style: italic;
@@ -49,13 +55,15 @@
     font-size: 28px;
     line-height: 41px;
     color: #101010;
-    margin: 30px 0px 0px 10px;
+    margin: 30px 0px 0px 20px;
   }
 
   .like {
-    margin-left: 25px;
+    margin-left: 60px;
     margin-top: -30px;
   }
+
+  /* Cartes */
 
   h3 {
     font-family: Roboto;
@@ -77,7 +85,7 @@
   }
 
   .cartes {
-    width: 349px;
+    width: 100%;
     height: 69px;
     background: #ffffff;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
@@ -118,6 +126,8 @@
     color: #353535;
   }
 
+  /* Bouton */
+
   .bouton-exploration {
     height: 50px;
     width: 218px;
@@ -141,13 +151,11 @@
     margin-top: 100px;
   }
 
-
-
   /* Footer */
 
   footer {
     width: 100%;
-    height: 200px;
+    height: 230px;
     margin-top: 50px;
     background-color: #353535;
   }
@@ -165,7 +173,7 @@
     height: 27px;
     width: 137px;
     filter: invert(100%);
-    padding: 20px;
+    margin: 25px;
   }
 
   .footer-texte {
@@ -184,14 +192,250 @@
     list-style-type: none;
     padding: 0px 0px 0px 20px;
     margin-top: 0px;
+    width: 100%;
   }
 
-  .footer-line {
-    width: 200px;
+  li {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .footer-texte {
+    width: 100%;
     display: flex;
   }
 
   .icons {
     margin-right: 20px;
   }
+}
+
+/* Propriétés de la page desktop */
+
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+  .body {
+    margin: 30px;
+    overflow-y: hidden;
+  }
+
+  /* Encadré du headerlogo */
+
+  .box-header-shadow {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    height: 63px;
+  }
+
+  /* Titre Logo */
+
+  .titre-logo {
+    font-family: Shrikhand;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+    text-align: center;
+  }
+
+  .image-general img {
+    position: relative;
+    height: 390px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    object-fit: cover;
+  }
+
+   
+  /* Page de restaurant */
+
+  .menus {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .page-de-restaurant {
+    position: absolute;
+    z-index: 1;
+    border-radius: 90px 90px 0px 0px;
+    background-color: #f7f7f7;
+    width: 1025px;
+    height: 60px;
+    top: 440px;
+    margin-left: -5px;
+    text-align: center;
+  }
+
+  .titre {
+    width: 100%;
+    height: 27px;
+    font-family: "Shrikhand";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 41px;
+    color: #101010;
+    margin: 50px 0px 70px 20px;
+  }
+
+  .like {
+    margin-left: 60px;
+    margin-top: -30px;
+  }
+
+   /* Cartes */
+
+   .articles-de-vente {
+    height: 600px;
+    margin: 150px 250px 150px 250px;
+    align-items: center;
+   }
+
+   h3 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 10px;
+  }
+
+  .small-line {
+    height: 0px;
+    width: 40px;
+    margin-left: 10px;
+    margin-top: -10px;
+    border: 3px solid #99e2d0;
+  }
+
+  .cartes {
+    width: 700px;
+    height: 69px;
+    background: #ffffff;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    border-radius: 15.0431px;
+  }
+  
+  .texte {
+    height: 21px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin: 30px 20px 60px 25px;
+  }
+
+  .sous-texte {
+    height: 19px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15.0431px;
+    line-height: 18px;
+    color: #000000;
+    margin-top: 10px;
+  }
+
+  .prix {
+    display: flex;
+    justify-content: end;
+    margin-top: -20px;
+    height: 18px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15.0431px;
+    line-height: 18px;
+    color: #353535;
+  }
+
+  /* Bouton */
+
+  .bouton-exploration {
+    height: 50px;
+    width: 218px;
+    background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    justify-content: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+
+  .bouton-position {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+  }
+
+  /* Footer */
+
+  footer {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    background-color: #353535;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .footer-logo {
+    font-family: "Shrikhand";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 60px;
+  }
+
+  .footer-logo img {
+    height: 27px;
+    width: 137px;
+    filter: invert(100%);
+    padding: 20px;
+  }
+
+  .footer-texte {
+    text-decoration: none;
+    width: 50%;
+    height: 19px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    margin-top: 70px;
+  }
+
+  .toto {
+    display: flex;
+  }
+
+  .toto li {
+    padding: 20px 20px 20px 20px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0px 0px 0px 20px;
+    margin-top: 0px;
+  }
+
+  .icons {
+    margin-right: 20px;
+  }
+
+
 }
