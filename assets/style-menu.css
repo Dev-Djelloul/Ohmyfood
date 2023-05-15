@@ -6,7 +6,7 @@
     overflow-y: hidden;
   }
 
-  /* Encadré du headerlogo */
+  /* Encadré du headerlogo + Go Back */
 
   .box-header-shadow {
     background-color: #ffffff;
@@ -14,16 +14,23 @@
     height: 63px;
   }
 
-  /* Titre Logo */
-
   .titre-logo {
     font-family: Shrikhand;
     font-style: italic;
     font-weight: 400;
     font-size: 30px;
     line-height: 44px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: -26px;
   }
+
+  .goback {
+    margin-top: 18px;
+    margin-left: 14px;
+  }
+
+  /* Image général */
 
   .image-general img {
     position: relative;
@@ -158,7 +165,7 @@
     height: 230px;
     margin-top: 50px;
     background-color: #353535;
-    margin-top: 900px;
+    margin-top: 90px;
   }
 
   .footer-logo {
@@ -216,10 +223,10 @@
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
   .body {
     margin: 30px;
-    overflow-y: hidden;
+    overflow-x: hidden;
   }
 
-  /* Encadré du headerlogo */
+  /* Encadré du headerlogo + Go Back */
 
   .box-header-shadow {
     background-color: #ffffff;
@@ -227,15 +234,20 @@
     height: 63px;
   }
 
-  /* Titre Logo */
-
   .titre-logo {
     font-family: Shrikhand;
     font-style: italic;
     font-weight: 400;
     font-size: 30px;
     line-height: 44px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: -26px;
+  }
+
+  .goback {
+    margin-top: 18px;
+    margin-left: 14px;
   }
 
   .image-general img {
@@ -247,7 +259,6 @@
     object-fit: cover;
   }
 
-   
   /* Page de restaurant */
 
   .menus {
@@ -277,7 +288,7 @@
     font-size: 28px;
     line-height: 41px;
     color: #101010;
-    margin: 50px 0px 70px 20px;
+    margin: 60px 20px 20px 20px;
   }
 
   .like {
@@ -285,22 +296,21 @@
     margin-top: -30px;
   }
 
-   /* Cartes */
+  /* Cartes */
 
-   .articles-de-vente {
-    height: 600px;
-    margin: 150px 250px 150px 250px;
+  .articles-de-vente {
+    margin: 100px 10px 10px 15px;
     align-items: center;
-   }
+  }
 
-   h3 {
+  h3 {
     font-family: Roboto;
     font-size: 16px;
     font-weight: 300;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
-    margin-top: 100px;
+    margin-top: 10px;
     margin-left: 10px;
   }
 
@@ -319,7 +329,7 @@
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     border-radius: 15.0431px;
   }
-  
+
   .texte {
     height: 21px;
     font-family: "Roboto";
@@ -377,7 +387,7 @@
   .bouton-position {
     display: flex;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 70px;
   }
 
   /* Footer */
@@ -389,7 +399,7 @@
     background-color: #353535;
     display: flex;
     flex-direction: row-reverse;
-    margin-top: 600px;
+    margin-top: 45px;
   }
 
   .footer-logo {
@@ -415,7 +425,7 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 19px;
     color: #fff;
     margin-top: 75px;
