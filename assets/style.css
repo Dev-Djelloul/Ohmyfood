@@ -1,17 +1,16 @@
 /* Propriétés de la page d'accueil Mobile First*/
 
-  .body {
-    margin: 30px;
-    overflow-y: hidden;
-  }
+.body {
+  margin: 30px;
+  overflow-y: hidden;
+}
 
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  @media screen and (min-width: 375px) and (max-width: 768px) {
-    
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
   /* Encadré du headerlogo */
 
   .box-header-shadow {
@@ -307,19 +306,9 @@
   }
 }
 
-/* Animations CSS */
-
-button:active {
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-}
-
 /* Propriété de la page d'acceuil responsive Desktop */
 
-@media only screen and (min-width: 1024px) and (max-width: 1440px) {
-  .body {
-    width: 100%;
-  }
-
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
   .titre-logo {
     display: flex;
     justify-content: center;
@@ -610,5 +599,11 @@ button:active {
 
   .icons {
     margin-right: 20px;
+  }
+
+  /* Animations CSS */
+
+  button:hover {
+    background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   }
 }
