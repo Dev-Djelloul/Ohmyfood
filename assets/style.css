@@ -19,9 +19,10 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #9356dc; /* Couleur de fond du loader */
-    z-index: 9999; /* Assurez-vous que le loader s'affiche au-dessus du contenu */
-    animation: loader-fade 2s forwards;
+    background: #9356dc;  
+    z-index: 9999; 
+    animation: loader-fade 3s forwards;
+    pointer-events: none;
   }
 
   .loader:before,
@@ -35,9 +36,9 @@ a {
     height: 60px;
     margin: -30px 0 0 -30px;
     border-radius: 50%;
-    border: 4px solid #ccc; /* Couleur du contour du loader */
-    border-top-color: #89c8fa; /* Couleur de l'animation du loader */
-    animation: loader-rotation 1.5s linear infinite;
+    border: 4px solid #003A68;;  
+    border-top-color: #89c8fa;  
+    animation: loader-rotation 6.5s linear infinite;
   }
 
   @keyframes loader-rotation {
@@ -58,7 +59,7 @@ a {
     }
     100% {
       opacity: 0;
-      display: none; /* Masquer le loader à la fin de l'animation */
+      display: none;  
     }
   }
 
@@ -151,8 +152,19 @@ a {
     align-items: center;
     text-align: center;
     color: #fff;
+    transition: background-color 0.3s, box-shadow 0.3s;
   }
 
+  .bouton-exploration:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.15),
+        rgba(255, 255, 255, 0.15)
+      ),
+      linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 25px;
+  }
   .bouton-position {
     display: flex;
     justify-content: center;
@@ -368,9 +380,10 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #9356dc; /* Couleur de fond du loader */
-    z-index: 9999; /* Assurez-vous que le loader s'affiche au-dessus du contenu */
+    background: #9356dc;  
+    z-index: 9999; 
     animation: loader-fade 3s forwards;
+    pointer-events: none;
   }
 
   .loader:before,
@@ -384,8 +397,8 @@ a {
     height: 60px;
     margin: -30px 0 0 -30px;
     border-radius: 50%;
-    border: 4px solid #ccc; /* Couleur du contour du loader */
-    border-top-color: #89c8fa; /* Couleur de l'animation du loader */
+    border: 4px solid #003A68;;  
+    border-top-color: #89c8fa;  
     animation: loader-rotation 6.5s linear infinite;
   }
 
@@ -407,7 +420,7 @@ a {
     }
     100% {
       opacity: 0;
-      display: none; /* Masquer le loader à la fin de l'animation */
+      display: none;  
     }
   }
 
@@ -478,8 +491,19 @@ a {
     align-items: center;
     text-align: center;
     color: #fff;
+    transition: background-color 0.3s, box-shadow 0.3s;
   }
 
+  .bouton-exploration:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.15),
+        rgba(255, 255, 255, 0.15)
+      ),
+      linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 25px;
+  }
   .bouton-position {
     display: flex;
     justify-content: center;
