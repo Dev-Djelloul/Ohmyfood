@@ -11,6 +11,57 @@ a {
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
+  /* Loader */
+
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #9356dc; /* Couleur de fond du loader */
+    z-index: 9999; /* Assurez-vous que le loader s'affiche au-dessus du contenu */
+    animation: loader-fade 2s forwards;
+  }
+
+  .loader:before,
+  .loader:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    margin: -30px 0 0 -30px;
+    border-radius: 50%;
+    border: 4px solid #ccc; /* Couleur du contour du loader */
+    border-top-color: #89c8fa; /* Couleur de l'animation du loader */
+    animation: loader-rotation 1.5s linear infinite;
+  }
+
+  @keyframes loader-rotation {
+    0% {
+      transform: rotate(0);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes loader-fade {
+    0% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      display: none; /* Masquer le loader à la fin de l'animation */
+    }
+  }
+
   /* Encadré du headerlogo */
 
   .box-header-shadow {
@@ -19,7 +70,7 @@ a {
     height: 63px;
   }
 
-  /* Titre Logo */
+  /* Titre logo */
 
   .titre-logo {
     font-family: Shrikhand;
@@ -309,11 +360,66 @@ a {
 /* Propriété de la page d'acceuil responsive Desktop */
 
 @media only screen and (min-width: 768px) and (max-width: 1440px) {
+  /* Loader */
+
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #9356dc; /* Couleur de fond du loader */
+    z-index: 9999; /* Assurez-vous que le loader s'affiche au-dessus du contenu */
+    animation: loader-fade 3s forwards;
+  }
+
+  .loader:before,
+  .loader:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    margin: -30px 0 0 -30px;
+    border-radius: 50%;
+    border: 4px solid #ccc; /* Couleur du contour du loader */
+    border-top-color: #89c8fa; /* Couleur de l'animation du loader */
+    animation: loader-rotation 6.5s linear infinite;
+  }
+
+  @keyframes loader-rotation {
+    0% {
+      transform: rotate(0);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes loader-fade {
+    0% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      display: none; /* Masquer le loader à la fin de l'animation */
+    }
+  }
+
+  /* Titre logo */
+
   .titre-logo {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
+  /* Encadré du headerlogo */
 
   .box-header-shadow {
     background-color: #ffffff;
