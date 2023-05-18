@@ -11,6 +11,7 @@ a {
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
+  
   /* Loader */
 
   .loader {
@@ -19,10 +20,17 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #9356dc;  
-    z-index: 9999; 
-    animation: loader-fade 3s forwards;
+    background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+    z-index: 9999;
+    animation: loader-fade 1s forwards;
     pointer-events: none;
+  }
+
+  .loader-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .loader:before,
@@ -36,8 +44,8 @@ a {
     height: 60px;
     margin: -30px 0 0 -30px;
     border-radius: 50%;
-    border: 4px solid #003A68;;  
-    border-top-color: #89c8fa;  
+    border: 4px solid #003a68;
+    border-top-color: #89c8fa;
     animation: loader-rotation 6.5s linear infinite;
   }
 
@@ -59,7 +67,7 @@ a {
     }
     100% {
       opacity: 0;
-      display: none;  
+      display: none;
     }
   }
 
@@ -380,8 +388,8 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #9356dc;  
-    z-index: 9999; 
+    background: #9356dc;
+    z-index: 9999;
     animation: loader-fade 3s forwards;
     pointer-events: none;
   }
@@ -397,8 +405,8 @@ a {
     height: 60px;
     margin: -30px 0 0 -30px;
     border-radius: 50%;
-    border: 4px solid #003A68;;  
-    border-top-color: #89c8fa;  
+    border: 4px solid #003a68;
+    border-top-color: #89c8fa;
     animation: loader-rotation 6.5s linear infinite;
   }
 
@@ -420,7 +428,7 @@ a {
     }
     100% {
       opacity: 0;
-      display: none;  
+      display: none;
     }
   }
 
@@ -653,14 +661,6 @@ a {
     color: #000000;
   }
 
-  .like {
-    padding: 30px 30px 0px 10px;
-  }
-
-  button {
-    border: none;
-  }
-
   .flexi-cartes-1 {
     display: flex;
     flex-direction: row;
@@ -731,9 +731,33 @@ a {
     margin-right: 20px;
   }
 
-  /* Animations CSS */
+  /* Animations CSS remplissage du coeur */
 
-  button:hover {
+  .heart {
+    position: relative;
+    z-index: 1;
+    margin: 40px 70px 0px 0px;
+  }
+
+  .heart:hover .heart__filled {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .heart__filled {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
     background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: transform 750ms ease-in-out;
+    z-index: -1;
+    opacity: 0;
   }
 }
