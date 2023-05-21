@@ -85,6 +85,44 @@ a {
     align-items: center;
   }
 
+   /* Coeur bouton j'aime */
+
+   .fa-heart::before {
+    content: "\f004";
+  }
+  
+  .like-icon-on {
+    position: absolute;
+    top: 33px;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px rgb(255,255,255);
+    transform: scale(1, 1.16);
+    margin-right: 30px;
+    margin-top: 2px;
+    font-size: 30px;
+  }
+
+  .like-icon-off {
+    background: linear-gradient(193.33deg, #FFFFFF -11.44%, #FFFFFF 123.93%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgb(0,0,0);
+    transform: scale(1, 1.16);
+    opacity: 1;
+    transition: opacity 0.3s;
+    margin-right: 30px;
+    margin-top: 0px;
+    font-size: 30px;
+  }
+
+  .like-icon-off:hover {
+    opacity: 0;
+  }
+
   /* Titres de la carte */
 
   h3 {
@@ -175,6 +213,7 @@ a {
     color: #353535;
   }
 
+
   /* Slider Checkbox */
 
   .slider-checkbox {
@@ -190,7 +229,7 @@ a {
     position: relative;
     transition: left 250ms;
   }
-  .slider-checkbox:active {
+  .slider-checkbox:active .cartes{
     left: calc(100% - 100px);
   }
   .slider-checkbox label {
@@ -382,6 +421,44 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+
+   /* Coeur bouton j'aime */
+
+   .fa-heart::before {
+    content: "\f004";
+  }
+  
+  .like-icon-on {
+    position: absolute;
+    top: 65px;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px rgb(255,255,255);
+    transform: scale(1, 1.16);
+    margin-left: 30px;
+    margin-top: 2px;
+    font-size: 30px;
+  }
+
+  .like-icon-off {
+    background: linear-gradient(193.33deg, #FFFFFF -11.44%, #FFFFFF 123.93%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgb(0,0,0);
+    transform: scale(1, 1.16);
+    opacity: 1;
+    transition: opacity 0.3s;
+    margin-left: 30px;
+    margin-top: 0px;
+    font-size: 30px;
+  }
+
+  .like-icon-off:hover {
+    opacity: 0;
   }
 
   /* Titres de la carte */
@@ -610,36 +687,6 @@ a {
 
 /* Animations CSS */
 
-/* Remplissage des boutons coeur */
-
-.heart {
-  position: relative;
-  z-index: 1;
-  margin: 0px 0px 0px 50px;
-}
-
-.heart:hover .heart__filled {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.heart__filled {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-  transform: scale(0);
-  transform-origin: bottom;
-  transition: transform 750ms ease-in-out;
-  z-index: -1;
-  opacity: 0;
-}
-
 /* Apparition des menus 3s */
 
 .entrees {
@@ -696,3 +743,36 @@ a {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
   border-radius: 25px;
 }
+
+
+.container {
+  position: relative;
+}
+
+.element-1 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  transition: transform 0.5s ease;
+}
+
+.container:hover .element-1 {
+  transform: translateX(-100%);
+}
+
+.element-2 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transition: left 5s ease;
+}
+
+.container:hover .element-2 {
+  left: 0;
+}
+
+
+

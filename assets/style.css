@@ -179,6 +179,7 @@ a {
     margin-top: 50px;
   }
 
+   
   /* Encadrés de fonctionnement du restaurant */
 
   .fonctionnement {
@@ -314,12 +315,38 @@ a {
     color: #000000;
   }
 
-  .like {
-    padding: 30px 30px 0px 10px;
+
+  /* Coeur boutoon j'aime */
+
+
+  .fa-heart::before {
+    content: "\f004";
   }
 
-  button {
-    border: none;
+  .like-icon-on {
+    position: absolute;
+    top: 245px;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+      background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px rgb(255,255,255);
+    transform: scale(1, 1.16);
+  }
+
+  .like-icon-off {
+    background: linear-gradient(193.33deg, #FFFFFF -11.44%, #FFFFFF 123.93%);
+      background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgb(0,0,0);
+    transform: scale(1, 1.16);
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+
+  .like-icon-off:hover {
+    opacity: 0;
   }
 
   /* Footer */
@@ -393,6 +420,14 @@ a {
     animation: loader-fade 3s forwards;
     pointer-events: none;
   }
+
+  .loader-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 
   .loader:before,
   .loader:after {
@@ -672,6 +707,46 @@ a {
     flex-direction: row;
   }
 
+
+  /* Coeur bouton j'aime */
+
+
+  .fa-heart::before {
+    content: "\f004";
+  }
+  
+  .like-icon-on {
+    position: absolute;
+    top: 243px;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+      background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px rgb(255,255,255);
+    transform: scale(1, 1.16);
+    margin-right: 30px;
+    margin-top: 10px;
+    font-size: 30px;
+  }
+
+  .like-icon-off {
+    background: linear-gradient(193.33deg, #FFFFFF -11.44%, #FFFFFF 123.93%);
+      background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgb(0,0,0);
+    transform: scale(1, 1.16);
+    opacity: 1;
+    transition: opacity 0.3s;
+    margin-right: 30px;
+    margin-top: 20px;
+    font-size: 30px;
+  }
+
+  .like-icon-off:hover {
+    opacity: 0;
+  }
+
   /* Footer */
 
   footer {
@@ -729,35 +804,5 @@ a {
 
   .icons {
     margin-right: 20px;
-  }
-
-  /* Animations CSS remplissage du coeur */
-
-  .heart {
-    position: relative;
-    z-index: 1;
-    margin: 40px 70px 0px 0px;
-  }
-
-  .heart:hover .heart__filled {
-    transform: scale(1);
-    opacity: 1;
-  }
-
-  .heart__filled {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-    transform: scale(0);
-    transform-origin: bottom;
-    transition: transform 750ms ease-in-out;
-    z-index: -1;
-    opacity: 0;
   }
 }
