@@ -341,7 +341,7 @@ a {
     transform: scale(1, 1.16);
     opacity: 1;
     transition: opacity 0.3s;
-    margin: 20px 20px 0px 0px;
+    margin: 10px 20px 0px 0px;
   }
 
   .like-icon-off:hover {
