@@ -85,20 +85,20 @@ a {
     align-items: center;
   }
 
-   /* Coeur bouton j'aime */
+  /* Coeur bouton j'aime */
 
-   .fa-heart::before {
+  .fa-heart::before {
     content: "\f004";
   }
-  
+
   .like-icon-on {
     position: absolute;
     top: 33px;
-    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0px rgb(255,255,255);
+    -webkit-text-stroke: 0px rgb(255, 255, 255);
     transform: scale(1, 1.16);
     margin-right: 30px;
     margin-top: 2px;
@@ -106,11 +106,11 @@ a {
   }
 
   .like-icon-off {
-    background: linear-gradient(193.33deg, #FFFFFF -11.44%, #FFFFFF 123.93%);
+    background: linear-gradient(193.33deg, #ffffff -11.44%, #ffffff 123.93%);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px rgb(0,0,0);
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
     transform: scale(1, 1.16);
     opacity: 1;
     transition: opacity 0.3s;
@@ -123,7 +123,7 @@ a {
     opacity: 0;
   }
 
-  /* Titres de la carte */
+  /* Titres de la carte "entrées" */
 
   h3 {
     font-family: Roboto;
@@ -144,7 +144,7 @@ a {
     border: 3px solid #99e2d0;
   }
 
-  /* La carte */
+  /* Apparition des menus 3s */
 
   .entrees {
     opacity: 0;
@@ -170,6 +170,8 @@ a {
     }
   }
 
+  /* La carte */
+
   .cartes {
     width: 100%;
     height: 69px;
@@ -179,6 +181,7 @@ a {
   }
 
   .texte {
+    width: 100%;
     height: 21px;
     font-family: "Roboto";
     font-style: normal;
@@ -190,6 +193,7 @@ a {
   }
 
   .sous-texte {
+    width: 100%;
     height: 19px;
     font-family: "Roboto";
     font-style: normal;
@@ -213,31 +217,33 @@ a {
     color: #353535;
   }
 
+   /* Slider Checkbox */
 
-  /* Slider Checkbox */
+   .texte:hover {
+    width: 60%;
+  }
 
-  .slider-checkbox {
-    margin-left: 0px;
-    margin-top: -49px;
+  .sous-texte:hover {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .slider {
+    position: absolute;
+    right: 0;
+    margin-top: -50px;
     width: 59px;
     height: 69px;
-    right: 0px;
-    left: 290px;
-    top: 0px;
     background: #99e2d0;
     border-radius: 0px 15px 15px 0px;
-    position: relative;
-    transition: left 250ms;
-  }
-  .slider-checkbox:active .cartes{
-    left: calc(100% - 100px);
-  }
-  .slider-checkbox label {
-    /* Styles du label */
+    transition: transform 400ms ease-in-out;
+    opacity: 0;
   }
 
-  .slider-checkbox input[type="checkbox"] {
-    /* Styles de l'input checkbox */
+  .slider:hover {
+    transform: translate(-50px);
+    opacity: 1;
   }
 
   .checkbox {
@@ -345,7 +351,7 @@ a {
   }
 }
 
-/* Propriétés de la 1ere page de restaurant Desktop et */
+/* Propriétés de la 1ere page de restaurant Desktop et Tablettes */
 
 @media screen and (min-width: 768px) and (max-width: 1440px) {
   /* Encadré du headerlogo + Go Back */
@@ -374,7 +380,7 @@ a {
     margin-left: 14px;
   }
 
-  /* Image général */
+  /* Bannière du restaurant */
 
   .banniere-restaurant img {
     position: relative;
@@ -423,20 +429,20 @@ a {
     align-items: center;
   }
 
-   /* Coeur bouton j'aime */
+  /* Coeur bouton j'aime */
 
-   .fa-heart::before {
+  .fa-heart::before {
     content: "\f004";
   }
-  
+
   .like-icon-on {
     position: absolute;
     top: 65px;
-    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0px rgb(255,255,255);
+    -webkit-text-stroke: 0px rgb(255, 255, 255);
     transform: scale(1, 1.16);
     margin-left: 30px;
     margin-top: 2px;
@@ -444,11 +450,11 @@ a {
   }
 
   .like-icon-off {
-    background: linear-gradient(193.33deg, #FFFFFF -11.44%, #FFFFFF 123.93%);
+    background: linear-gradient(193.33deg, #ffffff -11.44%, #ffffff 123.93%);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px rgb(0,0,0);
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
     transform: scale(1, 1.16);
     opacity: 1;
     transition: opacity 0.3s;
@@ -461,7 +467,7 @@ a {
     opacity: 0;
   }
 
-  /* Titres de la carte */
+  /* Titres de la carte "entrées" */
 
   h3 {
     font-family: Roboto;
@@ -482,7 +488,7 @@ a {
     border: 3px solid #99e2d0;
   }
 
-  /* Cartes */
+  /* Apparition des menus 3s */
 
   .entrees {
     opacity: 0;
@@ -508,6 +514,8 @@ a {
     }
   }
 
+  /* La Carte */
+
   .cartes {
     display: block;
     width: 100%;
@@ -518,6 +526,7 @@ a {
   }
 
   .texte {
+    width: 100%;
     height: 21px;
     font-family: "Roboto";
     font-style: normal;
@@ -529,6 +538,7 @@ a {
   }
 
   .sous-texte {
+    width: 100%;
     height: 19px;
     font-family: "Roboto";
     font-style: normal;
@@ -543,6 +553,7 @@ a {
     display: flex;
     justify-content: end;
     margin-top: -20px;
+    width: 100%;
     height: 18px;
     font-family: "Roboto";
     font-style: normal;
@@ -554,30 +565,27 @@ a {
 
   /* Slider Checkbox */
 
-  .slider-checkbox {
-    margin-left: 0px;
-    margin-top: -49px;
+  .cartes:hover {
+    width: 85%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .slider {
+    position: absolute;
+    right: 0;
+    margin-top: -50px;
     width: 59px;
     height: 69px;
-    right: 0px;
-    left: 100%;
-    top: 0px;
     background: #99e2d0;
     border-radius: 0px 15px 15px 0px;
-    position: relative;
-    transition: left 750ms;
+    transition: transform 400ms ease-in-out;
+    opacity: 0;
   }
 
-
-  .slider-checkbox:active {
-    left: calc(100% - 100px);
-  }
-  .slider-checkbox label {
-    /* Styles du label */
-  }
-
-  .slider-checkbox input[type="checkbox"] {
-    /* Styles de l'input checkbox */
+  .slider:hover {
+    transform: translateX(-100px);
+    opacity: 1;
   }
 
   .checkbox {
@@ -684,95 +692,3 @@ a {
     margin-right: 20px;
   }
 }
-
-/* Animations CSS */
-
-/* Apparition des menus 3s */
-
-.entrees {
-  opacity: 0;
-  animation: menu-fade-in 3s forwards;
-}
-
-.plats {
-  opacity: 0;
-  animation: menu-fade-in 6s forwards;
-}
-
-.desserts {
-  opacity: 0;
-  animation: menu-fade-in 9s forwards;
-}
-
-@keyframes menu-fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/* Bouton plus clair et plus ombré au survol */
-
-.bouton-exploration {
-  height: 50px;
-  width: 218px;
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 25px;
-  justify-content: center;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-.bouton-exploration:hover {
-  background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.15),
-      rgba(255, 255, 255, 0.15)
-    ),
-    linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-  border-radius: 25px;
-}
-
-
-.container {
-  position: relative;
-}
-
-.element-1 {
-  width: 200px;
-  height: 200px;
-  background-color: red;
-  transition: transform 0.5s ease;
-}
-
-.container:hover .element-1 {
-  transform: translateX(-100%);
-}
-
-.element-2 {
-  width: 200px;
-  height: 200px;
-  background-color: blue;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  transition: left 5s ease;
-}
-
-.container:hover .element-2 {
-  left: 0;
-}
-
-
-
