@@ -21,7 +21,7 @@ a {
     height: 100%;
     background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
     z-index: 9999;
-    animation: loader-fade 1s forwards;
+    animation: loader-fade 3s forwards;
     pointer-events: none;
   }
 
@@ -30,7 +30,9 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    filter: invert(66%);
   }
+
 
   .loader:before,
   .loader:after {
@@ -43,8 +45,8 @@ a {
     height: 60px;
     margin: -30px 0 0 -30px;
     border-radius: 50%;
-    border: 4px solid #003a68;
-    border-top-color: #89c8fa;
+    border: 4px solid linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+    border-top-color: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
     animation: loader-rotation 6.5s linear infinite;
   }
 
@@ -414,7 +416,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #9356dc;
+    background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
     z-index: 9999;
     animation: loader-fade 3s forwards;
     pointer-events: none;
@@ -425,6 +427,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    filter: invert(66%);
   }
 
   .loader:before,
@@ -438,8 +441,8 @@ a {
     height: 60px;
     margin: -30px 0 0 -30px;
     border-radius: 50%;
-    border: 4px solid #003a68;
-    border-top-color: #89c8fa;
+    border: 4px solid linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+    border-top-color: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
     animation: loader-rotation 6.5s linear infinite;
   }
 
