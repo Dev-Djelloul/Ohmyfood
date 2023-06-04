@@ -27,7 +27,7 @@ a {
 
   .loader-logo {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     filter: invert(66%);
@@ -410,7 +410,7 @@ a {
 @media only screen and (min-width: 768px) and (max-width: 1440px) {
   /* Loader */
 
-  .loader {
+ .loader {
     position: fixed;
     top: 0;
     left: 0;
@@ -424,11 +424,12 @@ a {
 
   .loader-logo {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     filter: invert(66%);
   }
+
 
   .loader:before,
   .loader:after {

@@ -189,7 +189,7 @@ a {
     font-size: 18px;
     line-height: 21px;
     color: #000000;
-    margin: 30px 20px 60px 25px;
+    margin: 30px 20px 60px 5px;
   }
 
   .sous-texte {
@@ -202,6 +202,15 @@ a {
     line-height: 18px;
     color: #000000;
     margin-top: 10px;
+  }
+
+  .text-overflow {
+    width: 189px;
+    display: block;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   .prix {
@@ -233,6 +242,7 @@ a {
     position: absolute;
     right: 0;
     margin-top: -50px;
+    margin-left: 550px;
     width: 59px;
     height: 69px;
     background: #99e2d0;
