@@ -153,12 +153,12 @@ a {
 
   .plats {
     opacity: 0;
-    animation: menu-fade-in 8s forwards;
+    animation: menu-fade-in 6s forwards;
   }
 
   .desserts {
     opacity: 0;
-    animation: menu-fade-in 12s forwards;
+    animation: menu-fade-in 8s forwards;
   }
 
   @keyframes menu-fade-in {
@@ -497,12 +497,12 @@ a {
 
   .plats {
     opacity: 0;
-    animation: menu-fade-in 8s forwards;
+    animation: menu-fade-in 6s forwards;
   }
 
   .desserts {
     opacity: 0;
-    animation: menu-fade-in 12s forwards;
+    animation: menu-fade-in 8s forwards;
   }
 
   @keyframes menu-fade-in {
