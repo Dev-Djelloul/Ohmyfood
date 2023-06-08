@@ -1,4 +1,4 @@
-/* Propriétés de la page d'accueil Mobile First*/
+/* Propriétés de la page d'accueil Mobile */
 
 .body {
   margin: 30px;
@@ -10,7 +10,10 @@ a {
   color: inherit;
 }
 
+
+
 @media screen and (min-width: 375px) and (max-width: 768px) {
+  
   /* Loader */
 
   .loader {
@@ -405,9 +408,14 @@ a {
   }
 }
 
-/* Propriété de la page d'acceuil responsive Desktop */
+
+
+
+
+/* Propriété de la page d'accueil Desktop */
 
 @media only screen and (min-width: 768px) and (max-width: 1440px) {
+  
   /* Loader */
 
  .loader {
