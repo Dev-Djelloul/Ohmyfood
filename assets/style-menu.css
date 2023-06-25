@@ -92,16 +92,15 @@ a {
   }
 
   .like-icon-on {
-    position: absolute;
-    top: 33px;
+    top: 35px;
     background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 0px rgb(255, 255, 255);
     transform: scale(1, 1.16);
-    margin-right: 30px;
-    margin-top: 2px;
+    margin-right: -35px;
+    margin-top: 10px;
     font-size: 30px;
   }
 
@@ -115,7 +114,7 @@ a {
     opacity: 1;
     transition: opacity 0.3s;
     margin-right: 30px;
-    margin-top: 0px;
+    margin-top: -10px;
     font-size: 30px;
   }
 
@@ -242,7 +241,7 @@ a {
     position: absolute;
     right: 0;
     margin-top: -50px;
-    margin-left: ;
+    margin-left: 0;
     width: 59px;
     height: 69px;
     background: #99e2d0;
@@ -445,8 +444,11 @@ a {
     content: "\f004";
   }
 
+  .like {
+    margin-left:100px;
+  }
+
   .like-icon-on {
-    position: absolute;
     top: 65px;
     background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
     background-clip: border-box;
@@ -454,7 +456,7 @@ a {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 0px rgb(255, 255, 255);
     transform: scale(1, 1.16);
-    margin-left: 30px;
+    margin-right: -65px;
     margin-top: 2px;
     font-size: 30px;
   }
