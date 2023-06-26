@@ -169,100 +169,81 @@ a {
     }
   }
 
-  /* La carte */
+  /* Les Cartes + rognage */
 
   .cartes {
-    width: 100%;
-    height: 69px;
-    background: #ffffff;
-    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-    border-radius: 15.0431px;
-  }
-
-  .texte {
-    width: 100%;
-    height: 21px;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 21px;
-    color: #000000;
-    margin: 30px 20px 60px 5px;
+    width: auto;
+    height: 59px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 30px 30px 30px 0px;
+    padding: 5px;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: padding-right 450ms ease-in-out;
+  }
+
+  .cartes:hover .slider {
+    opacity: 1;
+    transform: translate(-50px);
+  }
+
+  .cartes:hover {
+    padding-right: 95px;
   }
 
   .sous-texte {
-    width: 100%;
-    height: 19px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15.0431px;
-    line-height: 18px;
-    color: #000000;
-    margin-top: 10px;
-  }
-
-  .text-overflow {
-    width: 100px;
-    display: block;
-    font-size: 15px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-
-  .prix {
     display: flex;
-    justify-content: end;
-    margin-top: -20px;
-    height: 18px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.5em;
+  }
+
+
+  .sous-texte span {
+    margin-right: 25px;
     font-size: 15.0431px;
-    line-height: 18px;
-    color: #353535;
   }
 
-   /* Slider Checkbox */
-
-  .texte:hover {
-    width: 60%;
-  }
-
-  .sous-texte:hover {
-    text-overflow: ellipsis;
+  .sous-texte p {
+    font-size: 15.0431px;
+    margin: 10px 10px 10px 0px;
     white-space: nowrap;
+    text-overflow: ellipsis;
     overflow: hidden;
   }
 
   .slider {
-    position: absolute;
-    right: 0;
-    margin-top: -50px;
-    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99e2d0;
     width: 59px;
     height: 69px;
-    background: #99e2d0;
     border-radius: 0px 15px 15px 0px;
-    transition: transform 400ms ease-in-out;
+    position: absolute;
+    padding: 0px;
+    right: -50px;
+    top: 0;
     opacity: 0;
+    transition: transform 330ms ease-in-out;
   }
 
-  .slider:hover {
-    transform: translate(-50px);
-    opacity: 1;
-  }
-
-  .checkbox {
-    margin: 25px 0px 0px 23px;
-    width: 20px;
-    height: 20px;
+   .fas {
     color: #ffffff;
     filter: invert(10%);
-  }
-
+    display: flex;
+    justify-content: center;
+   }
+   
   /* Bouton */
 
   .bouton-exploration {
@@ -445,9 +426,8 @@ a {
   }
 
   .like {
-    margin-left:100px;
+    margin-left: 30px;
   }
-
   .like-icon-on {
     top: 65px;
     background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
@@ -529,94 +509,80 @@ a {
     }
   }
 
-  /* La Carte */
+  /* Les Cartes */
 
   .cartes {
-    display: block;
-    width: 100%;
-    height: 69px;
-    background: #ffffff;
-    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-    border-radius: 15.0431px;
-  }
-
-  .texte {
-    width: 100%;
-    height: 21px;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 21px;
-    color: #000000;
-    margin: 30px 20px 60px 25px;
+    width: auto;
+    height: 59px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 30px 30px 30px 0px;
+    padding: 5px;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: padding-right 450ms ease-in-out;
+  }
+
+  .cartes:hover .slider {
+    opacity: 1;
+    transform: translate(-50px);
+  }
+
+  .cartes:hover {
+    padding-right: 95px;
   }
 
   .sous-texte {
-    width: 100%;
-    height: 19px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15.0431px;
-    line-height: 18px;
-    color: #000000;
-    margin-top: 10px;
-  }
-
-  .prix {
-    display: flex;
-    margin-right: 35px;
-    margin-top: 10px;
-    height: 18px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 15.0431px;
-    line-height: 18px;
-    color: #353535;
-  }
-
-  .test {
     display: flex;
     justify-content: space-between;
-    vertical-align: middle;
+    align-items: center;
+    line-height: 1.5em;
   }
 
-  /* Slider Checkbox */
 
-  .texte:hover{
-    width: 95%;
-    text-overflow: ellipsis;
+  .sous-texte span {
+    margin-right: 25px;
+    font-size: 15.0431px;
+  }
+
+  .sous-texte p {
+    font-size: 15.0431px;
+    margin: 10px 10px 10px 0px;
     white-space: nowrap;
-    transition-delay: 80ms;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
   .slider {
-    position: absolute;
-    right: 0;
-    margin-top: -53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99e2d0;
     width: 59px;
     height: 69px;
-    background: #99e2d0;
     border-radius: 0px 15px 15px 0px;
-    transition: transform 400ms ease-in-out;
+    position: absolute;
+    padding: 0px;
+    right: -50px;
+    top: 0;
     opacity: 0;
+    transition: transform 330ms ease-in-out;
   }
 
-  .slider:hover {
-    transform: translateX(-50px);
-    opacity: 1;
-    transition-delay: 66ms;
-  }
-
-  .checkbox {
-    margin: 25px 0px 0px 23px;
-    width: 20px;
-    height: 20px;
+   .fas {
     color: #ffffff;
     filter: invert(10%);
-  }
+    display: flex;
+    justify-content: center;
+   }
 
   /* Bouton */
 
