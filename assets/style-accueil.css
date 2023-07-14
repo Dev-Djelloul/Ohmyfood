@@ -186,11 +186,11 @@ a {
   /* Encadrés de fonctionnement du restaurant */
 
   .fonctionnement {
-    width: 100%;
+    width: 90%;
     height: 360px;
     background-color: #ffffff;
     margin: 50px 0px 50px 0px;
-    padding: 20px 0px 20px 20px;
+    padding: 20px 20px 20px 20px;
   }
 
   .titre-troisieme {
@@ -399,7 +399,7 @@ a {
   }
 
   li {
-    width: 100%;
+    width: 90%;
     margin: 10px;
   }
 
@@ -414,7 +414,7 @@ a {
 
 /* Propriété de la page d'accueil Desktop */
 
-@media only screen and (min-width: 768px) and (max-width: 1440px) {
+@media only screen and (min-width: 768px){
   
   /* Loader */
 
@@ -569,8 +569,7 @@ a {
     display: flex;
     flex-direction: column;
     height: 230px;
-    margin: 50px 0px 0px 0px;
-    padding: 20px 0px 20px 20px;
+    padding: 20px 20px 20px 20px;
     background: #ffffff;
   }
 
@@ -586,7 +585,7 @@ a {
 
   .flexi-fonctionnement {
     display: flex;
-    justify-content: start;
+    justify-content: center;
   }
 
   .encadre-fonctionnement {
@@ -598,7 +597,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px 30px 30px 30px;
+    margin: 15px 15px 15px 15px;
   }
 
   .choix {
@@ -627,7 +626,7 @@ a {
     width: 24px;
     height: 24px;
     background: #9356dc;
-    margin-right: 280px;
+    margin-right: 200px;
   }
 
   /* Cartes des restaurants */

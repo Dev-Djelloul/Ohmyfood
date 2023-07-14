@@ -169,7 +169,7 @@ a {
     }
   }
 
-  /* Les Cartes + rognage */
+  /* Les Cartes + rognage/sélecteur de plats */
 
   .cartes {
     font-family: "Roboto";
@@ -327,7 +327,7 @@ a {
   }
 
   li {
-    width: 100%;
+    width: 90%;
     margin: 10px;
   }
 
@@ -343,7 +343,7 @@ a {
 
 /* Propriétés des pages de menus de restaurant Desktop et Tablettes */
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+@media screen and (min-width: 768px){
   /* Encadré du headerlogo + Go Back */
 
   .box-header-shadow {
