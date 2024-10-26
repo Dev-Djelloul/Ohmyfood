@@ -286,11 +286,11 @@ a {
     top: 10px;
     right: 10px;
     width: 70px;
-    height: 19px;
+    height: 25px;
     padding: 5px;
     background: #99e2d0;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 2px;
+    border-radius: 5px;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -311,9 +311,9 @@ a {
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
-    line-height: 21px;
-    margin-left: 20px;
-    margin-top: 20px;
+    line-height: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
     color: #000000;
   }
 
