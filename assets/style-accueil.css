@@ -1,7 +1,7 @@
-/* Propriétés de la page d'accueil Mobile */
+/* Propriétés générales */
 
 .body {
-  margin: 30px;
+  margin: 0px;
   overflow-y: hidden;
 }
 
@@ -10,6 +10,8 @@ a {
   color: inherit;
 }
 
+
+/* Propriétés de la page d'accueil Mobile */
 
 
 @media all and (max-width: 768px) {
@@ -482,6 +484,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
   }
 
   /* Encadré du headerlogo */
@@ -495,9 +498,14 @@ a {
   .location {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
-    height: 50px;
+    margin-top: 25px;
+    height: 25px;
     background: #eaeaea;
+  }
+
+  .location-next {
+    margin: 5px;
+    line-height: 20px;
   }
 
   .fa-solid {
@@ -702,9 +710,9 @@ a {
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
-    line-height: 21px;
-    margin-left: 20px;
-    margin-top: 20px;
+    line-height: 8px;
+    margin-left: 10px;
+    margin-top: 10px;
     color: #000000;
   }
 
