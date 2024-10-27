@@ -628,7 +628,7 @@ a {
     border-radius: 50%;
     color: white;
     text-align: center;
-    line-height: 25px;
+    line-height: 28px;
     font-weight: bold;
     position: absolute;
     width: 24px;
@@ -743,7 +743,7 @@ a {
     -webkit-text-stroke: 0px rgb(255, 255, 255);
     transform: scale(1, 1.16);
     margin-right: 30px;
-    margin-top: 10px;
+    margin-top: 7px;
     font-size: 30px;
   }
 
