@@ -26,7 +26,7 @@ a {
     height: 100%;
     background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
     z-index: 9999;
-    animation: loader-fade 3s forwards;
+    animation: loader-fade 1.5s forwards;
     pointer-events: none;
   }
 
@@ -134,7 +134,7 @@ a {
     line-height: 28px;
     color: #000000;
     text-align: center;
-    margin-top: 100px;
+    margin: 30px 65px 0px;
   }
 
   /* Titre second */
@@ -182,7 +182,7 @@ a {
   .bouton-position {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin: 30px;
   }
 
   /* Encadrés de fonctionnement du restaurant */
@@ -409,10 +409,6 @@ a {
   }
 }
 
-
-
-
-
 /* Propriété de la page d'accueil Desktop */
 
 @media only screen and (min-width: 768px){
@@ -427,7 +423,7 @@ a {
     height: 100%;
     background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
     z-index: 9999;
-    animation: loader-fade 3s forwards;
+    animation: loader-fade 1.5s forwards;
     pointer-events: none;
   }
 
@@ -519,7 +515,7 @@ a {
     font-family: Roboto;
     font-size: 40px;
     font-weight: 700;
-    line-height: 47px;
+    line-height: 22px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -530,7 +526,7 @@ a {
     font-family: Roboto;
     font-size: 18px;
     font-weight: 300;
-    line-height: 21px;
+    line-height: 6px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -567,7 +563,7 @@ a {
   .bouton-position {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin: 30px;
   }
 
   /* Fonctionnement */
@@ -708,11 +704,11 @@ a {
   .restaurant-name {
     font-family: "Roboto";
     font-style: normal;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 18px;
     line-height: 8px;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 0px;
     color: #000000;
   }
 
@@ -823,4 +819,96 @@ a {
   .icons {
     margin-right: 20px;
   }
+}
+
+/* Corrections responsive communes */
+
+body {
+  margin: 0;
+}
+
+.box-header-shadow {
+  height: auto;
+}
+
+.titre-logo {
+  min-height: 63px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location {
+  width: 100%;
+  min-height: 50px;
+  height: 50px;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eaeaea;
+}
+
+.location-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location .fa-solid {
+  margin: 0 16px 0 0;
+}
+
+main {
+  background: #f7f7f7;
+}
+
+.titre-premier,
+.titre-second,
+.bouton-position {
+  background: #f7f7f7;
+}
+
+.titre-premier {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.bouton-exploration {
+  border: 0;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.image-restaurant img {
+  display: block;
+  object-fit: cover;
+}
+
+.like {
+  position: relative;
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  margin-right: 20px;
+}
+
+.like-icon-on,
+.like-icon-off {
+  position: absolute;
+  inset: 0;
+  top: auto;
+  margin: 0;
+  width: 32px;
+  height: 32px;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.like-icon-off:hover,
+.like:hover .like-icon-off {
+  opacity: 0;
 }
